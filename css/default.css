@@ -4,7 +4,7 @@
     position: relative;
     top: 2px;
     left: 2px;
-    background-image: linear-gradient(90deg,white, blue);
+    background-image: linear-gradient(white, blue);
     border-radius: 14px;
 }
 #logo {
