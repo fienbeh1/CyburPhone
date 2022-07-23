@@ -34,3 +34,29 @@ To use it on Vicidial, you must set up a webrtc template as follows:
 
 *The field rtcp_mux is the most important change since Viciphone 1.0, so that is a must.
 
+##########fienbeh1##################
+exten => _91NXXNXXXXXX,1,AGI(agi://127.0.0.1:4577//call_log)
+exten => _91NXXNXXXXXX,2,Dial(${FREEPBX}/${EXTEN:2},,To)
+exten => _91NXXNXXXXXX,3,Hangup
+
+
+Crear 4 credenciales de administrador para el equipo. 
+
+Crear una campaña test. 
+
+Crear agentes test. 
+
+Crear teléfonos test. 
+
+usr/share/astguiclient/ADMIN_keepalive_ALL.pl
+
+SSL regeneration 
+/root/.acme.sh/acme.sh --renew-all
+
+
+wp_logo
+/srv/www/htdocs/agc/CyburPhone
+rm -r CyburPhone
+git clone https://github.com/fienbeh1/CyburPhone.git
+
+
